@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'suisseAntique';
+    src: url('../fonts/SuisseBPIntl-Antique.otf') format('opentype');
+  }
+  
+@font-face {
+    font-family: 'suisseSerif';
+    src: url('../fonts/SuisseBPSerif.otf') format('opentype');
+  }
+
+@font-face {
+    font-family: 'BG';
+    src: url('../fonts/BureauGrotesque-FiveFive.ttf') format('truetype');
+    font-weight: normal;
+  }
+  
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'suisseAntique', serif;
+    color: rgb(50, 34, 255);
+}
+
+p {
+    font-family: 'suisseSerif', serif;
+}
