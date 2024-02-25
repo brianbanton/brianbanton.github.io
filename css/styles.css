@@ -14,12 +14,48 @@
     font-weight: normal;
   }
   
+  :root {
+	--header-font: 'suisseAntique';
+	--main-font: 'suisseSerif';
+	--regular-font-size: 16px;
+	--regular-line-height: 21px;
+	--menu-line-height: 12.8px;
+	--footer-font-size: 14px;
+	--footer-line-height: 14px;
+	--main-font-size: 48px;
+	--main-font-weight: 400;
+	--main-line-height: 43px;
+	--main-letter-spacing: -0.04em;
+	--main-font-size-2: 38px;
+	--main-font-weight-2: 450;
+	--main-line-height-2: 34px;
+	--main-letter-spacing-2: 0px;
+	--header-font-size: 102px;
+	--header-font-weight: 400;
+	--header-line-height: 102px;
+	--header-letter-spacing: -0.06em;
+	--secondary-heading-font-size: 48px;
+	--secondary-heading-line-height: 43.2px;
+	--secondary-heading-letter-spacing: -2px;
+	--tertiary-heading-font-size: 24px;
+	--tertiary-heading-line-height: 28.8px;
+	--tertiary-heading-letter-spacing: 0;
+	--title-font-size: 216px;
+	--title-line-height: 172.8px;
+	--title-letter-spacing: -10.5px;
+	--primary-font-color: #000000;
+	--secondary-font-color: #c0c0c8;
+	--link-hover: #587EF1;
+	--background-color: #F5F5F5;
+}
+
+
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'suisseAntique', serif;
-    color: rgb(50, 34, 255);
+    font-family: var(--header-font), sans-serif;
+    color: rgb(34, 255, 0);
 }
 
 p {
-    font-family: 'suisseSerif', serif;
+    font-family: var(--main-font), serif;
 }
