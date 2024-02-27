@@ -53,9 +53,20 @@
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--header-font), sans-serif;
-    color: rgb(34, 255, 0);
+    color: rgb(0, 0, 0);
+    
+}
+
+h1 {
+    font-size: 24px;
 }
 
 p {
     font-family: var(--main-font), serif;
+}
+
+.biography {
+    line-height: 1.25rem;
+    color: #000000;
+
 }
