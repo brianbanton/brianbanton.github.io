@@ -1,0 +1,218 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg:     #F7F5F2;
+  --ink:    #111;
+  --muted:  #999;
+  --tag-bg: #EFEFED;
+  --mono:   'Geist Mono', 'Courier New', monospace;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--mono);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ── NAV ─────────────────────────────────────────────────────────── */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 32px;
+  background: var(--bg);
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s;
+}
+nav.scrolled { border-color: #E0DDD9; }
+
+.nav-name {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.nav-filters {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background: none;
+  border: 1px solid transparent;
+  color: var(--muted);
+  cursor: pointer;
+  padding: 4px 10px;
+  border-radius: 2px;
+  transition: all 0.15s;
+}
+.filter-btn:hover { color: var(--ink); }
+.filter-btn.active {
+  color: var(--ink);
+  background: var(--tag-bg);
+  border-color: #D8D5D0;
+}
+
+/* ── FEED ────────────────────────────────────────────────────────── */
+.feed {
+  position: relative;
+  padding-top: 72px;
+  width: 100%;
+}
+
+.post-row {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  padding: 0 40px;
+}
+
+/* ── POST CARD ───────────────────────────────────────────────────── */
+.post {
+  position: relative;
+  flex-shrink: 0;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(18px);
+}
+.post.hidden { display: none !important; }
+
+.post-media {
+  width: 100%;
+  overflow: hidden;
+  background: #E0DDD9;
+  position: relative;
+}
+.post-media img,
+.post-media video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s cubic-bezier(.25,.46,.45,.94);
+}
+.post:hover .post-media img,
+.post:hover .post-media video { transform: scale(1.03); }
+
+.post-media canvas { display: block; width: 100%; }
+
+.post-footer {
+  margin-top: 8px;
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  background: var(--tag-bg);
+  padding: 3px 7px;
+  border-radius: 2px;
+}
+
+.type-badge {
+  position: absolute;
+  bottom: 8px; right: 8px;
+  font-family: var(--mono);
+  font-size: 8.5px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background: rgba(247,245,242,0.9);
+  color: var(--ink);
+  padding: 3px 8px;
+  pointer-events: none;
+}
+
+/* ── LIGHTBOX ────────────────────────────────────────────────────── */
+.lightbox {
+  position: fixed; inset: 0;
+  background: rgba(17,17,17,0.93);
+  z-index: 9999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.lightbox.open { display: flex; }
+
+.lb-inner {
+  position: relative;
+  max-width: 90vw;
+  max-height: 92vh;
+}
+.lb-inner img,
+.lb-inner video {
+  max-width: 90vw;
+  max-height: 86vh;
+  display: block;
+  object-fit: contain;
+}
+
+.lb-close {
+  position: absolute;
+  top: -30px; right: 0;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  color: rgba(255,255,255,0.45);
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.lb-close:hover { color: #fff; }
+
+.lb-tags {
+  margin-top: 12px;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.lb-tags .tag {
+  background: rgba(255,255,255,0.07);
+  color: rgba(255,255,255,0.45);
+}
+
+/* ── FOOTER ──────────────────────────────────────────────────────── */
+footer {
+  text-align: center;
+  padding: 80px 32px 52px;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+footer a {
+  color: var(--muted);
+  text-decoration: none;
+}
+footer a:hover { color: var(--ink); }
+
+/* ── RESPONSIVE ──────────────────────────────────────────────────── */
+@media (max-width: 700px) {
+  nav { padding: 16px 20px; flex-wrap: wrap; gap: 10px; }
+  .post-row { padding: 0 20px; }
+}

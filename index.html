@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name — Visual Work</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ── NAV ──────────────────────────────────────────────────── -->
+  <nav id="nav">
+    <a href="#" class="nav-name">Your Name</a><!-- CHANGE THIS -->
+    <div class="nav-filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="branding">Branding</button>
+      <button class="filter-btn" data-filter="motion">Motion</button>
+      <button class="filter-btn" data-filter="print">Print</button>
+      <button class="filter-btn" data-filter="interactive">Interactive</button>
+      <button class="filter-btn" data-filter="type">Type</button>
+      <button class="filter-btn" data-filter="identity">Identity</button>
+    </div>
+  </nav>
+
+  <!-- ── FEED (populated by posts.js) ─────────────────────────── -->
+  <div class="feed" id="feed"></div>
+
+  <!-- ── FOOTER ───────────────────────────────────────────────── -->
+  <footer>
+    &copy; 2026 Your Name &nbsp;·&nbsp;<!-- CHANGE THIS -->
+    <a href="mailto:hello@yourdomain.com">hello@yourdomain.com</a><!-- CHANGE THIS -->
+  </footer>
+
+  <!-- ── LIGHTBOX ─────────────────────────────────────────────── -->
+  <div class="lightbox" id="lightbox">
+    <div class="lb-inner">
+      <button class="lb-close" id="lbClose">✕ close</button>
+      <div id="lbContent"></div>
+      <div class="lb-tags" id="lbTags"></div>
+    </div>
+  </div>
+
+  <!-- ── SCRIPTS ──────────────────────────────────────────────── -->
+  <script src="js/posts.js"></script>
+  <script src="js/canvas.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
