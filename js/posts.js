@@ -133,11 +133,11 @@ const posts = [
     src:    'assets/images/IF25-06.jpg'
   },
   {
-    type:   'image',
-    tags:   ['type', 'print'],
-    aspect: '3/4',
-    size:   'sm',
-    src:    'https://images.unsplash.com/photo-1455390582262-044cdead277a?w=600&q=85'
+    type:   'video',
+    tags:   ['type', 'motion'],
+    aspect: '9/16',
+    size:   'lg',
+    src:    'assets/videos/wandl_36days.mp4'
   },
   {
     type:   'video',
@@ -165,7 +165,7 @@ const posts = [
     type:   'image',
     tags:   ['print'],
     aspect: '4/3',
-    size:   'md',
+    size:   'lg',
     src:    'assets/images/IF_4.jpg'
   },
 
