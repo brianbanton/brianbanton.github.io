@@ -155,7 +155,7 @@ const posts = [
     init:      initTypeDist    // defined in canvas.js
   },
   {
-    type:   'image',
+    type:   'video',
     tags:   ['identity', 'branding'],
     aspect: '9/16',
     size:   'lg',
