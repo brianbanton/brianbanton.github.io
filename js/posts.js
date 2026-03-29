@@ -164,9 +164,9 @@ const posts = [
   {
     type:   'image',
     tags:   ['print'],
-    aspect: '4/5',
+    aspect: '1/1',
     size:   'md',
-    src:    'https://images.unsplash.com/photo-1614036417651-efe5912149d8?w=700&q=85'
+    src:    'assets/images/IF_4.jpg'
   },
 
 ];
