@@ -164,7 +164,7 @@ const posts = [
   {
     type:   'image',
     tags:   ['print'],
-    aspect: '16/9',
+    aspect: '4/3',
     size:   'md',
     src:    'assets/images/IF_4.jpg'
   },
