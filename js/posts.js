@@ -130,7 +130,7 @@ const posts = [
     tags:   ['print', 'identity'],
     aspect: '16/9',
     size:   'lg',
-    src:    'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=900&q=85'
+    src:    'assets/images/IF25-06.jpg'
   },
   {
     type:   'image',
