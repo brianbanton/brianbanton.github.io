@@ -141,10 +141,10 @@ const posts = [
   },
   {
     type:   'video',
-    tags:   ['motion', 'branding'],
-    aspect: '1/1',
+    tags:   ['motion', 'type'],
+    aspect: '16/9',
     size:   'md',
-    src:    'https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm'
+    src:    'assets/videos/F_F_E_1.mp4'
   },
   {
     type:      'canvas',
