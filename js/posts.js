@@ -157,9 +157,9 @@ const posts = [
   {
     type:   'image',
     tags:   ['identity', 'branding'],
-    aspect: '3/5',
+    aspect: '9/16',
     size:   'lg',
-    src:    'https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?w=700&q=85'
+    src:    'assets/videos/Ameoba.mp4'
   },
   {
     type:   'image',
