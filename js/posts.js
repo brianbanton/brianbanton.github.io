@@ -142,8 +142,8 @@ const posts = [
   {
     type:   'video',
     tags:   ['motion', 'type'],
-    aspect: '16/9',
-    size:   'md',
+    aspect: '1/1',
+    size:   'lg',
     src:    'assets/videos/F_F_E_1.mp4'
   },
   {
@@ -164,7 +164,7 @@ const posts = [
   {
     type:   'image',
     tags:   ['print'],
-    aspect: '1/1',
+    aspect: '16/9',
     size:   'md',
     src:    'assets/images/IF_4.jpg'
   },
