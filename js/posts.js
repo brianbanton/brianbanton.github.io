@@ -114,8 +114,8 @@ const posts = [
     type:   'image',
     tags:   ['branding'],
     aspect: '1/1',
-    size:   'md',
-    src:    'https://images.unsplash.com/photo-1509343256512-d77a5cb3791b?w=700&q=85'
+    size:   'lg',
+    src:    'assets/images/UAsock.png'
   },
   {
     type:      'canvas',
