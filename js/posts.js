@@ -100,7 +100,7 @@ const posts = [
     tags:   ['print', 'type'],
     aspect: '4/3',
     size:   'lg',
-    src:    'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&q=85'
+    src:    'assets/images/FF2012_slushies.jpg'
   },
   {
     type:   'video',
@@ -150,7 +150,7 @@ const posts = [
     type:      'canvas',
     tags:      ['interactive', 'type'],
     aspect:    '3/2',
-    size:      'sm',
+    size:      'lg',
     canvasId:  'c_type',
     init:      initTypeDist    // defined in canvas.js
   },
