@@ -69,6 +69,14 @@
 
 const posts = [
 
+  {
+    type:   'image',
+    tags:   ['type'],
+    aspect: '16/9',
+    size:   'xl',
+    src:    'assets/images/VDXAR4.053.jpeg'
+  },
+
   // ── Replace these demo posts with your own work ──────────────
 
   {
