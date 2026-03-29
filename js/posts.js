@@ -113,7 +113,7 @@ const posts = [
   {
     type:   'image',
     tags:   ['branding'],
-    aspect: '1/1',
+    aspect: '4/3',
     size:   'lg',
     src:    'assets/images/UAsock.png'
   },
