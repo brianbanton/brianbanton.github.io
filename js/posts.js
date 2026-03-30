@@ -70,11 +70,11 @@
 const posts = [
 
   {
-    type:   'image',
-    tags:   ['type'],
-    aspect: '16/9',
-    size:   'xl',
-    src:    'assets/images/VDXAR4.053.jpeg'
+    type:   'video',
+    tags:   ['motion','type'],
+    aspect: '9/16',
+    size:   'lg',
+    src:    'assets/videos/heterosis_overview.mp4'
   },
 
   // ── Replace these demo posts with your own work ──────────────
