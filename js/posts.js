@@ -105,9 +105,9 @@ const posts = [
   {
     type:   'video',
     tags:   ['motion'],
-    aspect: '9/16',
+    aspect: '3/4',
     size:   'sm',
-    src:    'https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm'
+    src:    'assets/videos/IG_a.mp4'
     // ↑ replace with: src: 'assets/videos/your-video.mp4'
   },
   {
