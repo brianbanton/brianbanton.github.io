@@ -72,8 +72,8 @@ const posts = [
   {
     type:   'video',
     tags:   ['motion','type'],
-    aspect: '9/16',
-    size:   'lg',
+    aspect: '3/4',
+    size:   'md',
     src:    'assets/videos/heterosis_overview.mp4'
   },
 
