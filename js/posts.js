@@ -82,9 +82,9 @@ const posts = [
   {
     type:   'image',
     tags:   ['branding', 'identity'],
-    aspect: '2/3',
+    aspect: '1/1',
     size:   'md',
-    src:    'https://images.unsplash.com/photo-1541701494587-cb58502866ab?w=700&q=85'
+    src:    'assets/images/freidolin_Void0039.png'
     // ↑ replace with: src: 'assets/images/your-image.jpg'
   },
   {
