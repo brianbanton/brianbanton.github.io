@@ -69,6 +69,14 @@
 
 const posts = [
 
+
+  {
+    type:   'video',
+    tags:   ['motion'],
+    aspect: '3/4',
+    size:   'md',
+    src:    'assets/videos/nood_earring_seq_02_1.mp4'
+  },
   {
     type:   'video',
     tags:   ['motion','type'],
